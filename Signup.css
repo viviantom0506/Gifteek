@@ -1,0 +1,24 @@
+.email {
+  padding-left: 40%;
+  padding-top: 8%;
+  padding-bottom: 3%;
+}
+
+.name {
+    padding-left: 40%;
+    padding-bottom: 3%;
+}
+
+.Date {
+    padding-left: 40%;
+    padding-bottom: 3%;
+}
+
+.Gender {
+    padding-left: 40%;
+}
+
+h3 {
+    text-align: center;
+    
+}

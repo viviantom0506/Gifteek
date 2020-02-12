@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="email.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="multiselect/jquery.multiselect.css" rel="stylesheet" />
+    <script src="multiselect/jquery.multiselect.js"></script>
+</head>
+
+<body>
+        <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Gifteek</a>
+                    </div>
+        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="navbartest.html">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a href="Aboutus.html">About Us</a></li>
+                            <li><a href="Birthday.html">Wedding</a></li>
+                            <li><a href="#">Bridal Shower</a></li>
+        
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="Signup.html">Sign Up</a></li>
+                            <li><a href="login.html">Log In</a></li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        
+<style> 
+    p {
+        padding-left: 30%;
+        padding-top: 5%;
+    }
+
+    h3 {
+        padding-left: 42%;
+        padding-bottom: 2%;
+    }
+
+    .omg {
+        border: 3px solid pink;
+        /* padding-left: 35%; */
+        padding-bottom: 3%;
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    body {
+        background: rgb(248, 224, 147);
+    }
+        </style>
+    
+<!-- <form ... onsubmit="return checkForm(this);">
+        <p>Username: <input type="text" name="username" id="usernamez"></p>
+        <p>Password: <input type="password" name="pwd1" id="password1" onkeyup="Confirmed()"></p>
+        <p>Confirm Password: <input type="password" name="pwd2" id="confirmedpass" onkeyup="Confirmed()"></p>
+        <br>
+        <span id="confirmation"></span>
+        <p><input type="submit"></p>
+    </form> -->
+
+
+
+    <script type="text/javascript">
+
+        var Confirmed = function (){
+
+            if(document.getElementById('password1').value==document.getElementById('confirmedpass').value) {
+                document.getElementById('confirmation').innerHTML="Password Matches!"
+            }
+            else {
+                document.getElementById('confirmation').innerHTML="Password doesn't match"
+            }
+        }
+
+
+
+
+   
+ 
+        var inputs = document.querySelectorAll('#form input');
+
+        var validateInput1 = function () {
+            return document.getElementById('usernamez').value != '';
+        }
+
+        var validateInput2 = function () {
+            return document.getElementById('password1').value != '';
+        }
+
+        var validateInput2 = function () {
+            return document.getElementById('password').value != '';
+        }
+
+        var validateForm = function () {
+
+            if (!validateInput1()) {
+                return false;
+            }
+
+            if (!validateInput2()) {
+                return false;
+            }
+
+            return true;
+        }
+
+        for (var i = 0, len = inputs.length; i < len; i++) {
+            var checkValid = function () {
+                document.getElementById('submit').disabled = !validateForm();
+
+
+            }
+
+            inputs[i].addEventListener('change', checkValid);
+            inputs[i].addEventListener('keyup', checkValid);
+        }
+    </script>
+    <h3>Log In</h3>
+    <div class = "omg">
+<form ... onsubmit="return checkForm(this);">
+        <p>Username: <input type="text" name="username" id="usernamez"></p>
+        <p>Password: <input type="password" name="pwd1" id="password1" onkeyup="Confirmed()"></p>
+        <p>Confirm Password: <input type="password" name="pwd2" id="confirmedpass" onkeyup="Confirmed()"></p>
+        <br>
+        <span id="confirmation"></span>
+        <p><input type="submit"></p>
+    </form>
+</div>
+</body>
+<!-- <input type = "text" name = "inputz">  -->
+
+</html>

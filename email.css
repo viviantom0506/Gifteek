@@ -1,0 +1,25 @@
+p {
+    font-family: serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+    padding-top: 3%;
+    
+}
+
+.email {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.submit {
+    text-align: center;
+    padding-top: 3%;
+}
+
+body {
+    background: rgb(238, 215, 153);
+}

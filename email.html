@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>E-mail</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="email.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="multiselect/jquery.multiselect.css" rel="stylesheet" />
+  <script src="multiselect/jquery.multiselect.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Gifteek</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a href="Birthday.html">Wedding</a></li>
+          <li><a href="#">Bridal Shower</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Signup.html">Sign Up</a></li>
+          <li><a href="login.html">Log In</a></li>
+        </ul>
+        </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <p>Join our e-mailing list today!</p>
+  <div class="name">
+    <form id="form" method="POST" onsubmit="alert('Submitted!'); return false">
+      <label class="form">Name </label><input type="text" name="input1" id="input1"> <br>
+  </div>
+  <div class="email">
+    <label class="form">E-mail </label><input type="text" name="input2" id="input2"> <br>
+  </div>
+  <div class="submit">
+    <button id="submit" type="submit" value="submit" disabled="disabled">Submit</button>
+  </div>
+
+  </form>
+  <script>
+    var inputs = document.querySelectorAll('#form input');
+
+    var validateInput1 = function () {
+      return document.getElementById('input1').value != '';
+    }
+
+    var validateInput2 = function () {
+      return document.getElementById('input2').value != '';
+    }
+
+    var validateForm = function () {
+
+      if (!validateInput1()) {
+        return false;
+      }
+
+      if (!validateInput2()) {
+        return false;
+      }
+
+      return true;
+    }
+
+    for (var i = 0, len = inputs.length; i < len; i++) {
+      var checkValid = function () {
+        document.getElementById('submit').disabled = !validateForm();
+
+
+      }
+
+      inputs[i].addEventListener('change', checkValid);
+      inputs[i].addEventListener('keyup', checkValid);
+    }
+  </script>
+
+
+</body>
+
+</html>

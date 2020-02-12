@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sign up</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="Signup.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <style>
+    .email {
+      padding-left: 43%;
+      padding-top: 5%;
+      padding-bottom: 3%;
+    }
+
+    .name {
+      padding-left: 43%;
+      padding-bottom: 3%;
+    }
+
+    .Date {
+      padding-left: 43%;
+      padding-bottom: 3%;
+    }
+
+    .Gender {
+      padding-top: 4%
+      
+    }
+    h3 {
+      text-align: center;
+
+    }
+
+    .video {
+      position: absolute;
+      left: 450px;
+    }
+
+    .submitbutton {
+      padding-top: 3%;
+      padding-left: 48%;
+      padding-bottom: 3%;
+    }
+  
+   .telephone {
+     padding-bottom: 3%;
+     padding-top: 4%;
+   }
+   .usernameCheck {
+     padding-left: 43%;
+     padding-bottom: 4%;
+   }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Gifteek</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="navbartest.html">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a href="Birthday.html">Wedding</a></li>
+          <li><a href="#">Bridal Shower</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Signup.html">Sign Up</a></li>
+          <li><a href="login.html">Log In</a></li>
+        </ul>
+        </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <h3> SIGN UP TODAY! </h3>
+  <form name="form" action="passwordtest.html">
+    <div class="email">Email:
+      <input type="text" name="email">
+    </div>
+    <div class="name">Name:
+      <input type="text" name="firstname"><br>
+    </div>
+    <div class="usernameCheck"> Username:
+
+        <input type="text" name="username">
+        <p> Click <a href="test2.html">here </a> to check if your username is valid or not</p>
+      </div>
+    <div class="Date">
+      <label for="start"> Date of Birth: </label>
+
+      <input type="date" id="start" name="trip-start" value="1900-01-01" min="1900-01-01" max="2030-12-31">
+      <script type="text/javascript">
+
+        // function checkForm(form) {
+
+        //   re = /^\w+$/;
+        //   if(!re.test(form.username.value)) {
+        //     alert("Error: Username must contain only letters, numbers and underscores!");
+        //     form.username.focus();
+        //     return false;
+        //   }
+
+        // if (form.pwd1.value !== form.pwd2.value) {
+        //   alert("Error: Password doesn't match!");
+        //   form.pwd1.focus();
+        //   return false;
+        // }
+
+
+        // else if (form.pwd1.value === form.pwd2.value) {
+        //   alert("You entered a valid password: " + form.pwd1.value);
+        //   return true;
+        // }
+        // }
+        function chBackcolor(color) {
+          document.body.style.background = color;
+        }
+        function skipIfMax(element) {
+          max = parseInt(element.dataset.max);
+          if (element.value.length >= max && element.nextElementSibling) {
+            element.nextElementSibling.focus();
+          }
+        }
+
+
+
+      </script>
+      <div class="Gender">Gender:
+
+        <select>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <!-- <form ... onsubmit="return checkForm(this);">
+        <p>Username: <input type="text" name="username"></p>
+    
+        <p><input type="submit"></p>
+      </form> -->
+      
+  </form>
+
+  <div class="telephone" id = "telephone" style = "font-family: 'Courier New', Courier, monospace;" style = "font-size: 1em;">
+      <label for="phone">Enter your phone number:</label>
+     
+  
+      <input type="text" style="width: 70px" data-max="3" maxlegnth="3" oninput="skipIfMax(this)">
+      <!-- <p>- </p> -->
+      <input type="text" style="width: 70px" data-max="3" maxlegnth="3" oninput="skipIfMax(this)">
+      <!-- <p>- </p> -->
+      <input type="text" style="width: 80px" data-max="3" maxlegnth="3" oninput="skipIfMax(this)">
+    </div>
+  </div>
+   
+    <input type="button" value="Click me to change boldness" onclick="document.getElementById('telephone').style.fontSize = '2.0em'">
+  <input type="button" onclick="chBackcolor('pink');" value="Click here to change color"> <br></div>
+
+  
+  <div class="submitbutton">
+    <button onClick="test2.html">Submit</button>
+    <!-- <input type = "submit"  value = "submit"> -->
+  </div>
+  
+  </form>
+  <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-EfjXQgE1e8" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+</body>
+
+</html>

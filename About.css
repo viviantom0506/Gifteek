@@ -1,0 +1,24 @@
+table{
+    margin-left: 40%;
+    border: 1px pink;
+    
+}
+
+body {
+    background : rgb(255, 230, 161) !important;
+}
+
+p {
+    
+   text-align: center;
+}
+
+#Gifteeklogo {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    font-size: 80px;
+}
+
+ul {
+    padding-left: 48%;
+}
